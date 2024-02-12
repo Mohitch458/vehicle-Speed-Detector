@@ -1,41 +1,36 @@
-# vehicle-Speed-Detector
 
-1. Project Description:
+Title: Vehicle Speed Detection System
 
-Briefly explain what your project does and its purpose.
-Mention the type of technology used (e.g., image processing, computer vision, sensors).
-Highlight any unique features or functionalities of your speed detector.
-2. Installation and Usage:
 
-Provide clear instructions on how to install and run your project.
-Specify any system requirements or dependencies.
-Include step-by-step instructions with screenshots or videos if helpful.
-3. Key Features:
+Description: This project implements a real-time vehicle speed detection system using OpenCV and dlib. It detects and tracks cars in a video, estimates their speed, and displays it on the screen.
 
-List the main features and capabilities of your speed detector.
-Use bullet points for easy readability.
-Briefly explain how each feature works, emphasizing its benefits.
-4. Demo and Output:
+Key Features:
 
-If applicable, include a short demo video showcasing your project in action.
-Describe the expected output and how to interpret it.
-5. Contributing:
+Detects multiple vehicles using Haar cascades.
+Tracks individual vehicles using correlation trackers.
+Estimates speed based on object movement and frame rate.
+Displays vehicle speed overlayed on the video.
+Saves the output video with speed information.
+Requirements:
 
-If you encourage contributions, outline how someone can get involved.
-Specify contribution guidelines and communication channels.
-6. License:
+Python 3.x
+OpenCV library
+dlib library
+NumPy library
+myhaar.xml - your pre-trained car detection model 
 
-Clearly state the license under which your project is distributed.
-7. Additional Information:
+Instructions:
+Make sure you have the required libraries installed.
+Replace 'myhaar.xml' with the path to your car detection model.
+Run the script main.py.
 
-Include any relevant details not covered above, such as:
-Project limitations or known issues.
-Future development plans.
-References or resources used.
-Here are some additional tips for writing your README file:
+Output:
+The script will display the video with detected vehicles and their estimated speed.
+It will also save an output video outpy.avi with the same information.
 
-Keep it concise and well-organized.
-Use clear and concise language, avoiding technical jargon where possible.
-Proofread carefully for typos and grammatical errors.
-Use headings and formatting to make the information easy to find.
-Keep the file updated as your project evolves.
+Additional Notes:
+This is a basic implementation and can be further improved by:
+Using a more advanced object detection model.
+Incorporating lane detection for more accurate speed estimation.
+Implementing various filtering techniques to improve tracking accuracy.
+You can adjust the parameters in the script to fine-tune the performance for your specific video.
